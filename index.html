@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlanPal - Interactive Preview</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .mockup-container {
+      position: relative;
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    .mockup-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .hover-zone {
+      position: absolute;
+      border: 2px dashed rgba(255,255,255,0.25); /* For testing only */
+      cursor: pointer;
+    }
+
+    .tooltip-text {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      width: 220px;
+      z-index: 99;
+      display: none;
+    }
+
+    .hover-zone:hover .tooltip-text {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore PlanPal</h1>
+    <p style="margin-top: -10px; font-size: 1.2rem;">Smart, simple, beautiful travel planning</p>
+  </header>
+
+  <section id="hero">
+    <div class="mockup-container">
+      <img src="assets/mockup_combined.png" alt="PlanPal App Preview">
+
+      <!-- LOGIN SCREEN -->
+      <div class="hover-zone" style="top: 5%; left: 5%; width: 13%; height: 35%;">
+        <div class="tooltip-text" style="top: 105%; left: 0;">
+          🔐 <strong>Login Screen:</strong><br>
+          Sign in via Apple, Google, or email. Upload profile photo and choose personal or business mode.
+        </div>
+      </div>
+
+      <!-- HOME DASHBOARD -->
+      <div class="hover-zone" style="top: 5%; left: 19%; width: 13%; height: 35%;">
+        <div class="tooltip-text" style="top: 105%; left: 0;">
+          🏠 <strong>Home Dashboard:</strong><br>
+          Personalized greeting and fast access to news, transportation, and food recommendations.
+        </div>
+      </div>
+
+      <!-- ITINERARY -->
+      <div class="hover-zone" style="top: 5%; left: 33%; width: 13%; height: 35%;">
+        <div class="tooltip-text" style="top: 105%; left: 0;">
+          🗓 <strong>Itinerary Builder:</strong><br>
+          Create and manage travel days, add activities, and toggle between plan, budget, and notes.
+        </div>
+      </div>
+
+      <!-- BUDGET -->
+      <div class="hover-zone" style="top: 55%; left: 5%; width: 13%; height: 35%;">
+        <div class="tooltip-text" style="top: 105%; left: 0;">
+          💰 <strong>Budget Tracker:</strong><br>
+          Track expenses visually with category breakdowns, alerts, and offline mode.
+        </div>
+      </div>
+
+      <!-- AI TRIP PLANNER -->
+      <div class="hover-zone" style="top: 55%; left: 19%; width: 13%; height: 35%;">
+        <div class="tooltip-text" style="top: 105%; left: 0;">
+          🤖 <strong>AI Trip Planner:</strong><br>
+          Input your travel preferences and let PlanPal auto-create a full custom itinerary.
+        </div>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="hover-zone" style="top: 55%; left: 33%; width: 13%; height: 35%;">
+        <div class="tooltip-text" style="top: 105%; left: 0;">
+          ⭐ <strong>Attraction Reviews:</strong><br>
+          Rate and review places you visit. See real traveler feedback and safety insights.
+        </div>
+      </div>
+    </div>
+
+    <a href="#download" class="cta-button">Get Early Access</a>
+  </section>
+
+  <section id="download">
+    <h2>Download PlanPal</h2>
+    <p>Available soon on your favorite app store.</p>
+    <a href="#" class="download-link">Join the Waitlist</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PlanPal by Team Green Apples | Contact: hello@planpal.com</p>
+  </footer>
+</body>
+</html>

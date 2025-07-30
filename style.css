@@ -1,0 +1,79 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f4f3;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #00796b;
+  color: white;
+  padding: 2rem;
+}
+
+#hero {
+  padding: 2rem;
+}
+
+.mockup-container {
+  position: relative;
+  display: inline-block;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.mockup-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.hover-zone {
+  position: absolute;
+  cursor: pointer;
+  border: 2px dashed rgba(0, 0, 0, 0.15); /* keep visible for now */
+}
+
+.tooltip-text {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  width: 220px;
+  z-index: 99;
+  display: none;
+}
+
+.hover-zone:hover .tooltip-text {
+  display: block;
+}
+
+.cta-button, .download-link {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover, .download-link:hover {
+  background-color: #00594c;
+}
+
+footer {
+  background-color: #004d40;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
