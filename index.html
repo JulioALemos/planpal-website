@@ -101,7 +101,8 @@
       </div>
     </div>
 
-    <a href="#download" class="cta-button">Get Early Access</a>
+    <button class="cta-button" onclick="showEarlyAccess()">Get Early Access</button>
+
   </section>
 
   <section id="download">
@@ -113,5 +114,35 @@
   <footer>
     <p>&copy; 2025 PlanPal by Team Green Apples | Contact: hello@planpal.com</p>
   </footer>
+
+  <section id="early-access-screen" style="display: none; padding: 2rem; background-color: #f0f8ff;">
+  <h2>You're In!</h2>
+  <p>Thanks for your interest. We'll notify you when PlanPal is available for early access.</p>
+  <input type="email" placeholder="Enter your email" style="padding: 0.5rem; width: 250px;">
+  <button onclick="alert('Thank you!')" style="padding: 0.5rem 1rem; margin-left: 10px;">Submit</button>
+
+<br><br>
+  <button onclick="goBack()" style="padding: 0.5rem 1rem; background-color: #ccc; border: none; cursor: pointer;">
+    ⬅ Back
+  </button>
+  </section>
+ 
+<script>
+  function showEarlyAccess() {
+    document.getElementById("early-access-screen").style.display = "block";
+    document.getElementById("hero").style.display = "none";
+  }
+
+  function goBack() {
+    document.getElementById("early-access-screen").style.display = "none";
+    document.getElementById("hero").style.display = "block";
+  }
+  
+</script>
 </body>
 </html>
+
+
+
+
+
