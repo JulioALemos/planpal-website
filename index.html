@@ -128,17 +128,18 @@
   </section>
  
 <script>
-  function showEarlyAccess() {
-    document.getElementById("early-access-screen").style.display = "block";
-    document.getElementById("hero").style.display = "none";
-  }
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".cta-button").addEventListener("click", function () {
+      document.getElementById("early-access-screen").style.display = "block";
+      document.getElementById("hero").style.display = "none";
+    });
 
-  function goBack() {
-    document.getElementById("early-access-screen").style.display = "none";
-    document.getElementById("hero").style.display = "block";
-  }
-  
- </script>
+    document.querySelector("#early-access-screen button[onclick*='goBack']").addEventListener("click", function () {
+      document.getElementById("early-access-screen").style.display = "none";
+      document.getElementById("hero").style.display = "block";
+    });
+  });
+</script>
 </body>
 </html>
 
